@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5 Dump & Go Crockpot Dinners | The Cozy Family Kitchen</title>
+  <meta name="description" content="5 dump and go crockpot dinners that are easy, cozy, family-friendly, and perfect for busy weeknights." />
+  <style>
+    :root {
+      --bg: #fffaf6;
+      --card: #ffffff;
+      --text: #2c1d16;
+      --muted: #6b5a52;
+      --accent: #b64b1f;
+      --accent-dark: #8f3917;
+      --gold: #f2b544;
+      --cream: #f8efe7;
+      --border: #ead7c7;
+      --shadow: 0 12px 30px rgba(73, 38, 20, 0.10);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #fffaf6 0%, #fdf4ec 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: 18px;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(39, 22, 16, 0.55), rgba(39, 22, 16, 0.65)),
+        url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+      color: white;
+      padding: 80px 0 70px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(242, 181, 68, 0.18);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #ffe4b0;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      line-height: 1.05;
+      margin: 0 0 16px;
+      font-weight: 800;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      font-size: 1.08rem;
+      color: #f8e8de;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .intro {
+      margin: -28px auto 40px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      position: relative;
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: var(--accent-dark);
+    }
+
+    .pin-note {
+      background: #fff3e7;
+      border-left: 6px solid var(--accent);
+      padding: 16px 18px;
+      border-radius: 14px;
+      margin-top: 16px;
+      color: #5b3a2a;
+    }
+
+    .section-title {
+      margin: 48px 0 18px;
+      font-size: 2rem;
+      color: var(--accent-dark);
+      text-align: center;
+    }
+
+    .recipes {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      margin-bottom: 40px;
+    }
+
+    .recipe-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+    }
+
+    .recipe-image img {
+      height: 100%;
+      object-fit: cover;
+      min-height: 340px;
+      border-radius: 0;
+    }
+
+    .recipe-content {
+      padding: 26px;
+      background: linear-gradient(180deg, #fff 0%, #fff8f2 100%);
+    }
+
+    .recipe-number {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-weight: 800;
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    .recipe-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.8rem;
+      line-height: 1.15;
+      color: #2b160f;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 12px 0 18px;
+    }
+
+    .meta span {
+      background: var(--cream);
+      color: #6a4a3a;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .recipe-content p {
+      margin: 12px 0;
+    }
+
+    .subhead {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: var(--accent-dark);
+      margin: 18px 0 8px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin: 8px 0 14px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .pro-tip {
+      background: #fff1e4;
+      border: 1px solid #f0c7aa;
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+
+    .pro-tip strong {
+      color: var(--accent-dark);
+    }
+
+    .notes {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 30px;
+      margin: 40px 0;
+    }
+
+    .notes-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .note-box {
+      background: linear-gradient(180deg, #fff8f1 0%, #fff 100%);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .note-box h4 {
+      margin-top: 0;
+      color: var(--accent-dark);
+      font-size: 1.2rem;
+    }
+
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg, #b64b1f 0%, #8f3917 100%);
+      color: white;
+      border-radius: 24px;
+      padding: 36px 24px;
+      margin: 40px 0 70px;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 18px;
+      color: #ffe7d9;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: var(--gold);
+      color: #4a2616;
+      text-decoration: none;
+      font-weight: 800;
+      padding: 14px 22px;
+      border-radius: 999px;
+      transition: 0.2s ease;
+    }
+
+    .cta a:hover {
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 860px) {
+      .recipe-grid,
+      .notes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .recipe-image img {
+        min-height: 240px;
+      }
+
+      .hero {
+        padding: 60px 0 50px;
+      }
+
+      .intro {
+        padding: 22px;
+      }
+
+      .recipe-content {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">The Cozy Family Kitchen • Pinterest Favorite</div>
+      <h1>5 Dump &amp; Go Crockpot Dinners</h1>
+      <p>
+        Cozy, easy, and perfect for busy weeknights. These simple crockpot meals are the kind of recipes
+        you toss in, walk away from, and come back to dinner already handled.
+      </p>
+      <div class="hero-badges">
+        <div class="badge">Minimal Prep</div>
+        <div class="badge">Family Friendly</div>
+        <div class="badge">Busy Night Approved</div>
+        <div class="badge">Chef-Style Tips Included</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Easy Slow Cooker Dinners for Busy Weeknights</h2>
+      <p>
+        Need dinner to practically cook itself? Same. These <strong>5 dump and go crockpot dinners</strong>
+        are cozy, practical, and loaded with flavor without making your kitchen feel like a second shift.
+        I wrote these like a chef would: simple instructions, flavor-building tips, and the little notes
+        that help the meal turn out better.
+      </p>
+      <p>
+        Each recipe below includes:
+        <strong>what to add, how to cook it, when to finish it, and chef tips</strong> so it tastes
+        homemade instead of just thrown together.
+      </p>
+      <div class="pin-note">
+        <strong>Pinterest tip:</strong> This layout is designed to feel scroll-stopping and warm. Use it as a
+        recipe roundup page or as the matching blog post behind your Pinterest pin.
+      </div>
+    </section>
+
+    <h2 class="section-title">The 5 Dump &amp; Go Dinners</h2>
+
+    <section class="recipes">
+      <article class="recipe-card">
+        <div class="recipe-grid">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80" alt="Slow cooker beef stew in a bowl" />
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-number">Dinner 01</div>
+            <h3>Slow Cooker Beef Stew</h3>
+            <div class="meta">
+              <span>Cook Time: 8 hrs low</span>
+              <span>Comfort Food</span>
+              <span>Freezer Friendly</span>
+            </div>
+            <p>
+              This is the kind of crockpot dinner that tastes like you worked all day on it.
+              Rich beef, tender potatoes, soft carrots, and a savory broth that feels extra cozy.
+            </p>
+
+            <div class="subhead">What You Need</div>
+            <ul>
+              <li>2 lbs beef stew meat</li>
+              <li>4 carrots, sliced</li>
+              <li>4 potatoes, chopped</li>
+              <li>1 onion, diced</li>
+              <li>3 cups beef broth</li>
+              <li>2 tbsp tomato paste</li>
+              <li>2 tbsp Worcestershire sauce</li>
+              <li>2 tsp garlic, 1 tsp thyme, salt, pepper</li>
+            </ul>
+
+            <div class="subhead">How to Make It</div>
+            <ol>
+              <li>Add everything to the crockpot and stir lightly.</li>
+              <li>Cook on <strong>low for 8 hours</strong> or <strong>high for 4 to 5 hours</strong>.</li>
+              <li>For a thicker stew, stir in a cornstarch slurry during the last 20 minutes.</li>
+              <li>Taste and adjust salt before serving.</li>
+            </ol>
+
+            <div class="pro-tip">
+              <strong>Chef tip:</strong> If you have 5 extra minutes, sear the beef first. It is not required,
+              but it gives the stew a deeper, richer flavor.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-grid">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1200&q=80" alt="Creamy crockpot chicken pasta" />
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-number">Dinner 02</div>
+            <h3>Creamy Crockpot Chicken Pasta</h3>
+            <div class="meta">
+              <span>Cook Time: 6 hrs low</span>
+              <span>Creamy Favorite</span>
+              <span>Kid Friendly</span>
+            </div>
+            <p>
+              This one is easy, creamy, and comforting. Perfect for those nights when everyone wants
+              something warm and filling.
+            </p>
+
+            <div class="subhead">What You Need</div>
+            <ul>
+              <li>2 lbs boneless chicken breasts</li>
+              <li>1 can cream of chicken soup</li>
+              <li>1 block cream cheese</li>
+              <li>1 cup chicken broth</li>
+              <li>1 tsp garlic powder</li>
+              <li>1 tsp Italian seasoning</li>
+              <li>12 oz cooked pasta</li>
+              <li>Parmesan and parsley for finishing</li>
+            </ul>
+
+            <div class="subhead">How to Make It</div>
+            <ol>
+              <li>Add chicken, soup, cream cheese, broth, and seasonings to the crockpot.</li>
+              <li>Cook on <strong>low for 6 hours</strong> or until chicken shreds easily.</li>
+              <li>Shred the chicken right in the sauce.</li>
+              <li>Stir in cooked pasta and a handful of parmesan before serving.</li>
+            </ol>
+
+            <div class="pro-tip">
+              <strong>Chef tip:</strong> Cook the pasta separately and add it at the end so it stays tender,
+              not mushy.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-grid">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1200&q=80" alt="Slow cooker chicken tacos" />
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-number">Dinner 03</div>
+            <h3>Dump &amp; Go Chicken Tacos</h3>
+            <div class="meta">
+              <span>Cook Time: 6 hrs low</span>
+              <span>Taco Night</span>
+              <span>Meal Prep Win</span>
+            </div>
+            <p>
+              The easiest taco filling ever. Juicy shredded chicken, bold flavor, and almost no prep.
+              Great for tacos, bowls, nachos, or quesadillas.
+            </p>
+
+            <div class="subhead">What You Need</div>
+            <ul>
+              <li>2 lbs chicken breasts or thighs</li>
+              <li>1 jar salsa</li>
+              <li>1 packet taco seasoning</li>
+              <li>1 can diced green chiles</li>
+              <li>1 tbsp lime juice</li>
+              <li>Tortillas + toppings for serving</li>
+            </ul>
+
+            <div class="subhead">How to Make It</div>
+            <ol>
+              <li>Add chicken, salsa, taco seasoning, and green chiles to the crockpot.</li>
+              <li>Cook on <strong>low for 6 hours</strong> or <strong>high for 3 to 4 hours</strong>.</li>
+              <li>Shred the chicken and stir it into the juices.</li>
+              <li>Finish with lime juice right before serving for brightness.</li>
+            </ol>
+
+            <div class="pro-tip">
+              <strong>Chef tip:</strong> A tiny squeeze of lime at the end wakes up the whole dish and makes
+              it taste fresher.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-grid">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1514516345957-556ca7bf1c63?auto=format&fit=crop&w=1200&q=80" alt="Slow cooker chili in a crockpot" />
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-number">Dinner 04</div>
+            <h3>Hearty Crockpot Chili</h3>
+            <div class="meta">
+              <span>Cook Time: 8 hrs low</span>
+              <span>High Protein</span>
+              <span>Cozy Classic</span>
+            </div>
+            <p>
+              Thick, hearty, and perfect for colder days or busy evenings. This is one of those recipes
+              that somehow tastes even better the next day.
+            </p>
+
+            <div class="subhead">What You Need</div>
+            <ul>
+              <li>1 lb ground beef or turkey, browned</li>
+              <li>1 onion, diced</li>
+              <li>1 can kidney beans</li>
+              <li>1 can black beans</li>
+              <li>1 can crushed tomatoes</li>
+              <li>2 tbsp chili powder</li>
+              <li>1 tsp cumin</li>
+              <li>Salt, pepper, garlic</li>
+            </ul>
+
+            <div class="subhead">How to Make It</div>
+            <ol>
+              <li>Brown the meat first for the best flavor and texture.</li>
+              <li>Add everything to the crockpot and stir well.</li>
+              <li>Cook on <strong>low for 8 hours</strong> or <strong>high for 4 hours</strong>.</li>
+              <li>Serve with shredded cheese, sour cream, or cornbread.</li>
+            </ol>
+
+            <div class="pro-tip">
+              <strong>Chef tip:</strong> Add a pinch of sugar if your chili tastes too acidic from the tomatoes.
+              It rounds everything out beautifully.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-grid">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1200&q=80" alt="Slow cooker garlic chicken and potatoes" />
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-number">Dinner 05</div>
+            <h3>Garlic Herb Chicken &amp; Potatoes</h3>
+            <div class="meta">
+              <span>Cook Time: 7 hrs low</span>
+              <span>One Pot Meal</span>
+              <span>Easy Cleanup</span>
+            </div>
+            <p>
+              Tender chicken, buttery potatoes, garlic, and herbs. This one feels simple but still special,
+              like a Sunday dinner without the Sunday effort.
+            </p>
+
+            <div class="subhead">What You Need</div>
+            <ul>
+              <li>2 lbs chicken thighs or breasts</li>
+              <li>1.5 lbs baby potatoes</li>
+              <li>3 tbsp butter, melted</li>
+              <li>4 garlic cloves, minced</li>
+              <li>1 tsp paprika</li>
+              <li>1 tsp Italian seasoning</li>
+              <li>1/2 cup chicken broth</li>
+              <li>Salt, pepper, parsley</li>
+            </ul>
+
+            <div class="subhead">How to Make It</div>
+            <ol>
+              <li>Add potatoes to the bottom of the crockpot.</li>
+              <li>Place chicken on top and pour over butter, broth, garlic, and seasonings.</li>
+              <li>Cook on <strong>low for 7 hours</strong> or until chicken is tender.</li>
+              <li>Top with parsley before serving.</li>
+            </ol>
+
+            <div class="pro-tip">
+              <strong>Chef tip:</strong> Use thighs if you want extra juicy chicken. They hold up beautifully in
+              the slow cooker.
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="notes">
+      <h2 class="section-title" style="margin-top:0;">Important Notes for the Best Dump &amp; Go Results</h2>
+      <div class="notes-grid">
+        <div class="note-box">
+          <h4>1. Do Not Overfill the Crockpot</h4>
+          <p>
+            Try to keep it between <strong>half full and two-thirds full</strong>. Overfilling can affect cook time
+            and make the food cook unevenly.
+          </p>
+        </div>
+        <div class="note-box">
+          <h4>2. Layer Smart</h4>
+          <p>
+            Put firmer vegetables like potatoes and carrots at the bottom. They take longer to cook and benefit from
+            direct heat.
+          </p>
+        </div>
+        <div class="note-box">
+          <h4>3. Add Dairy at the End</h4>
+          <p>
+            Cream cheese, shredded cheese, sour cream, and heavy cream can separate if added too early. Stir them in
+            near the end whenever possible.
+          </p>
+        </div>
+        <div class="note-box">
+          <h4>4. Brighten Before Serving</h4>
+          <p>
+            A little lime juice, lemon juice, fresh parsley, or parmesan at the end gives slow cooker meals a fresher,
+            more balanced flavor.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Save This for Your Next Busy Week</h2>
+      <p>
+        These <strong>5 dump and go crockpot dinners</strong> are exactly the kind of cozy, low-stress meals that make
+        weeknights easier. Pin it now, come back later, and let dinner handle itself.
+      </p>
+      <a href="#">Pin This Recipe Roundup</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 The Cozy Family Kitchen • Cozy meals made simple
+  </footer>
+</body>
+</html>
